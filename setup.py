@@ -29,7 +29,7 @@ if __name__ == '__main__':
                 
             print('******************** Data has been loaded succesfully **********************')
             break
-        except (FileNotFoundError,TypeError,ValueError,KeyError):
+        except (FileNotFoundError,TypeError,ValueError,KeyError,IsADirectoryError):
             print('Path or file is not valid !')
 
     
