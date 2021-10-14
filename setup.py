@@ -6,7 +6,7 @@ import os
 if __name__ == '__main__':
     while True:
         try:
-            root = str(input('por favor ingrese la ruta del archivo: '))
+            root = str(input('Please write the file path: '))
             df = read_csv(root,sep=';',low_memory=True,
                         dtype={'gender':'category','deuda':'int16'})
             
@@ -30,7 +30,7 @@ if __name__ == '__main__':
             print('******************** Data has been loaded succesfully **********************')
             break
         except (FileNotFoundError,TypeError,ValueError,KeyError):
-            print('La Ruta o archivo es incorrecto!')
+            print('Path or file is not valid !')
 
     
 
