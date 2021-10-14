@@ -29,7 +29,7 @@ if __name__ == '__main__':
                 
             print('******************** Data has been loaded succesfully **********************')
             break
-        except (FileNotFoundError,TypeError,ValueError):
+        except (FileNotFoundError,TypeError,ValueError,KeyError):
             print('La Ruta o archivo es incorrecto!')
 
     
